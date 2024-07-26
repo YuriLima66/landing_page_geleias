@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  height: 100vh;
+  background: black url(imagens/frutas.jpg) center center no-repeat fixed;
+  background-size: cover;
+  font-size: 1.6rem; /* 16px */
+}
+
+.menu_superior {
+  font-size: 4rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.658);
+  gap: 1.2rem;
+}
+
+.menu_superior > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem;
+}
+
+.menu_superior > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.932);
+  color: black;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.726);
+  max-width: 100rem;
+  max-height: 80vh;
+  padding: 1rem;
+  margin: 10vh auto;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+main > section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 5%;
+}
+
+main > section > div {
+  padding: 2%;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+main > section > div:hover {
+  background-color: rgba(255, 255, 255, 0.705);
+  transform: scale(1.1);
+  border-radius: 0.3rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.geleias {
+  height: 25rem;
+}
+
+p {
+  font-size: 1.8rem;
+  width: 70%;
+  margin: auto;
+}
+
+footer {
+  list-style-type: none;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.658);
+  color: white;
+  text-align: center;
+  border-top: 0.3rem solid white;
+  position: absolute;
+  bottom: -10rem;
+}
+
+footer > nav > ul > li > a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+footer > nav > ul > li > a:hover {
+  background-color: rgba(255, 255, 255, 0.932);
+  color: black;
+}
+
+.legenda_footer {
+  font-size: 1rem;
+}
+
+.legenda_footer > a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.legenda_footer > a:hover {
+  background-color: white;
+  font-size: 110%;
+  color: red;
+  text-align: right;
+}
